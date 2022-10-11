@@ -1,4 +1,4 @@
-# Asili Future of Fashion
+# Asili - Future of Fashion
 
 # Project Introduction
 African fashion designers have the potential of responding to the market but are held back by pre-production factors such as, obtaining the ideal design sketches and deciding which materials to employ for garment manufacture. Despite it being the most important phase of production many African fashion designers find the entire process to be time-consuming.
