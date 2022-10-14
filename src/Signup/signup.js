@@ -1,7 +1,8 @@
 // import React, { useEffect, useState } from "react";
 import './signup.css'
-import axios from "axios";
-import { useState } from 'react';
+ import { useState } from 'react';
+ import {Link, useNavigate  } from 'react-router-dom'
+
 // import Prop from './Props';
 // import Render from "./Render";
 
@@ -11,6 +12,9 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState("");
     const [first_name, setFirstName] = useState("");
     const [last_name, setLastName] = useState("");
+    const navigate = useNavigate()
+
+
     const submitting=( event )=>{
         event.preventDefault()
         const user = {first_name,last_name,password,email}
@@ -31,6 +35,10 @@ fetch("http://127.0.0.1:8000/user/", requestOptions)
 const refreshPage = ()=>{
      window.location.reload();
   }
+  const navigateHome = () => {
+    navigate('/home')
+}
+  
     return (
         <div className="body">
             <h2>Sign Up to Continue</h2>
@@ -89,7 +97,7 @@ const refreshPage = ()=>{
                             }
                         ></input><br></br></div>
                 </label>
-                <button className="button" type='submit' onClick={refreshPage} >SignUp</button>
+                <button className="button" type='submit' onClick={navigateHome}  >SignUp</button>
             </form>
             <p className="account">Don't have an account?
             <a href="/Login"><span> Login </span> </a> </p>

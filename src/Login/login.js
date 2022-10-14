@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import './login.css'
+import {Link, useNavigate  } from 'react-router-dom'
 // import Prop from './Props';
 // import Render from "./Render";
 const Login= () => {
     const [email, setEmail] = useState("");
+    const navigate = useNavigate()
     console.log(email);
     const [password, setPassword] = useState("");
     console.log(password);
@@ -13,6 +15,9 @@ const Login= () => {
             password: password,
         };
         console.log(JSON.stringify(data));
+    }
+    const navigateHome = () => {
+           navigate('/home')
     }
     return (
         <div className="body">
@@ -43,10 +48,10 @@ const Login= () => {
                         <input type="checkbox"></input>
                         <p>Keep me logged in</p> <span>Forgot password?</span></div>
                 </label>
-                  <button className="button">Login</button>
+                <button className="button" onClick={navigateHome}>Login</button>
             </form>
             <p className="account">Don't have an account?
-            <a href="/User"> <span> Home </span> </a> </p>
+            <a href="/SignUp"> <span> SignUp </span> </a> </p>
             </div>
     )
 };
