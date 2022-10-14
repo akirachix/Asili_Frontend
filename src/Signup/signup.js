@@ -27,7 +27,6 @@ const requestOptions = {
 fetch("http://127.0.0.1:8000/user/", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
-  .catch(error => console.log('error', error));
     }
 const refreshPage = ()=>{
      window.location.reload();
