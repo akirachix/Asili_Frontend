@@ -21,7 +21,6 @@ import React,{useEffect, useState} from "react";
         if(!loading){
             return <div> loading...</div>
         }
-    
         return(
             <div>
                 {user.map(item =>
