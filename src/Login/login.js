@@ -16,7 +16,11 @@ const Login = () => {
     console.log(JSON.stringify(data));
   };
   const navigateHome = () => {
-    navigate("/home");
+    if(!email || !password ){
+    }
+    else{
+      navigate("/home");
+    }
   };
   return (
     <div className="body">
@@ -29,6 +33,7 @@ const Login = () => {
               className="container"
               type="text"
               placeholder="Enter email"
+              required
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
@@ -40,6 +45,7 @@ const Login = () => {
               className="container"
               type="password"
               placeholder="Password"
+              required
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
