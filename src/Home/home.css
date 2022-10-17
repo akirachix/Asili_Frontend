@@ -1,0 +1,11 @@
+/* .fetched{
+display: grid;
+grid-column: 3;
+grid-template-columns: auto auto auto auto; */
+.fetched{
+    display: grid;
+    grid-template-columns: repeat(4,1 fr);
+    gap: 1 rem;
+    }
+    
+

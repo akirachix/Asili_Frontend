@@ -5,9 +5,21 @@ import jacket from "../images/jacket.png";
 import tshirt from "../images/tshirt.png";
 import trouser from "../images/trouser.png";
 import fashion from "../images/fashion.png";
+import { Link, useNavigate } from "react-router-dom";
+
+
 import "./homepage.css";
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+  
+  const navigateUser = () => {
+    navigate("/explore");
+  };
+  const navigateSignup = () =>{
+    navigate("/SignUp");
+  }
   return (
     <div className="nav">
       <nav>
@@ -23,21 +35,21 @@ const Navbar = () => {
         </div>
         <div className="nav-search">
           <input type="text" placeholder="Search" />
-          <button className="btnRegister">
-            <a href="#">Register</a>
+          <button className="btnRegiste" onClick={navigateSignup}>
+            <a>Register</a>
           </button>
         </div>
       </nav>
       <div className="landing-page">
         <div className="intro">
-          <h1>Asili Active wear</h1>
+          <h1>Asili wear</h1>
           <p>
-            Asili Active Wear the leading cloth brand which brings you high
+            Asili Wear the leading cloth brand which brings you high
             quality products at affordable prices.<br></br>Visit our website
-            today and get the best deals!
+            today and get the best design for you!
           </p>
-          <button className="btnRegister">
-            <a href="#">Explore</a>
+          <button className="btnRegister" onClick={navigateUser}>
+            <a>Explore</a>
           </button>
         </div>
         <div className="image">
@@ -51,10 +63,10 @@ const Navbar = () => {
           Asili Active Wear the leading cloth brand which brings you high
           quality products at affordable prices
         </p>
-        <p>
+        < p className="parag-two">
           Choose your perfect cloth, checkout how you amazing you look
           in them, sharew with a designer and get the job done.
-          You are happy we are happy :)
+          You are happy we are happy.
           {" "}
         </p>
       </div>
@@ -66,28 +78,28 @@ const Navbar = () => {
           <img src={dress} />
           <p className="cloth-name">
             {" "}
-            <a href="#">Dress</a>
+            Dress
           </p>
         </div>
         <div className="clothes">
           <img src={jacket} />
           <p className="cloth-name">
             {" "}
-            <a href="#">Jacket</a>
+            Jacket
           </p>
         </div>
         <div className="clothes">
           <img src={trouser} />
           <p className="cloth-name">
             {" "}
-            <a href="#">Trousers</a>
+            Trousers
           </p>
         </div>
         <div className="clothes">
           <img src={tshirt} />
           <p className="cloth-name">
             {" "}
-            <a href="#">T-shirts</a>
+            T-shirts
           </p>
         </div>
       </div>

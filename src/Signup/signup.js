@@ -34,7 +34,7 @@ const refreshPage = ()=>{
      window.location.reload();
   }
   const navigateHome = () => {
-    navigate("/home");
+    navigate("/Login");
   };
     return (
         <div className="body">
@@ -43,7 +43,7 @@ const refreshPage = ()=>{
                 <label>
                      <div className="names">
                      <div className="firstName">
-                        <input className="z"
+                        <input className="FirstNameInput"
                             type="text"
                             placeholder="First Name"
                             value={first_name}
@@ -52,10 +52,11 @@ const refreshPage = ()=>{
                             } }
                         ></input></div>
                      <div className="lastName">
-                        <input className="x"
+                        <input className="LastNameInput"
                             type="text"
                             placeholder="Last Name"
                             value={last_name}
+                            required
                             onChange = {(e)=> {
                                 setLastName (e.target.value)
                             } }
