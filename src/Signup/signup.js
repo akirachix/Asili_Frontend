@@ -16,7 +16,12 @@ const SignUp = () => {
     const navigate = useNavigate();
 
     const submitting = (event) => {
-        event.preventDefault()
+        if (!first_name || !last_name || !email || !password || !confirmPassword) {
+       alert("fill data")
+        
+        }
+        else {
+            event.preventDefault()
         const user = { first_name, last_name, password, email }
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
@@ -28,20 +33,17 @@ const SignUp = () => {
             ),
             redirect: 'follow'
         };
-        fetch("http://127.0.0.1:8000/user/", requestOptions)
+        fetch( "http://127.0.0.1:8000/api/user/", requestOptions)
             .then(response => response.text())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));
-    }
-
-    const navigateHome = () => {
-        if (!first_name || !last_name || !email || !password || !confirmPassword) {
-        }
-        else {
             navigate("/Login");
 
         }
-    };
+    }
+    // const navigateHome = () => {
+     
+    // };
     return (
         <div className="body">
             <h2>Sign Up to Continue</h2>
@@ -105,11 +107,11 @@ const SignUp = () => {
                             }
                         ></input><br></br></div>
                 </label>
-                <button className="button" type='submit' onClick={navigateHome} >SignUp</button>
+                <button className="button" type='submit'  >SignUp</button>
             </form>
             <p className="account">Don't have an account?
                 <a href="/Login"><span> Login </span> </a> </p>
         </div>
-    )
+    );
 };
 export default SignUp;

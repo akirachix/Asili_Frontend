@@ -5,6 +5,7 @@ import jacket from "../images/jacket.png";
 import tshirt from "../images/tshirt.png";
 import trouser from "../images/trouser.png";
 import fashion from "../images/fashion.png";
+import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 
 
@@ -13,11 +14,21 @@ import "./homepage.css";
 const Navbar = () => {
 
   const navigate = useNavigate();
-  
+  const handleChange = (e) => {
+    const value = e.target.value
+    axios.get("http://127.0.0.1:8000/cloth?category=${value}",{query:{category:value}}).then(response => {
+      console.log(response)
+    }).catch(error => {
+      console.log(error)
+
+    })
+
+  }
+
   const navigateUser = () => {
     navigate("/explore");
   };
-  const navigateSignup = () =>{
+  const navigateSignup = () => {
     navigate("/SignUp");
   }
   return (
@@ -34,7 +45,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="nav-search">
-          <input type="text" placeholder="Search" />
+          <input onChange={handleChange} type="text" placeholder="Search" />
           <button className="btnRegiste" onClick={navigateSignup}>
             <a>Register</a>
           </button>

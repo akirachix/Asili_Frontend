@@ -3,9 +3,8 @@ import "./home.css";
 import { Link, useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
-
-
+import { Row } from "react-bootstrap";
+import Grid from '@mui/material/Grid';
 
 const User = () => {
     const [users, setUser] = useState();
@@ -15,15 +14,16 @@ const User = () => {
         userData();
     }, [])
     const userData = () => {
-        fetch('http://127.0.0.1:8000/cloth/')
+        fetch("http://127.0.0.1:8000/api/cloth/")
             .then(res => res.json())
             .then(data => {
                 setUser(data)
                 setLoading(true)
                 console.log("fetched ---->", data)
             })
-            .catch(e => console.log(e))
+            .catch(e => console.log(e));
     }
+
     const navigate = useNavigate();
 
     const navigateSignup = () => {
@@ -54,20 +54,15 @@ const User = () => {
                 </div>
 
             </nav>
-            {users.map((user) => (
-                <div className="fetched">
-                    <Card style={{ width: '18rem' }}>
+           <Grid container>
 
-                        <Card.Body>
-                            <Card.Text>
-                                <img style = {{width:"200px", height: "200px"}} src={user.image} alt="img" />
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </div>
-
-
+            {users.map((user)=>(
+                <Grid className="" item xs={4} key={user?.id} >
+                    <img style = {{width:"300px", height: "300px"}} src={user.image}  />
+                </Grid>
             ))}
+           </Grid>
+                       
         </div>
     );
 };

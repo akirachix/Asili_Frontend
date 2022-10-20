@@ -14,14 +14,18 @@ const Login = () => {
       password: password,
     };
     console.log(JSON.stringify(data));
+    console.log('hey');
+    navigate("/home");
   };
-  const navigateHome = () => {
-    if(!email || !password ){
-    }
-    else{
-      navigate("/home");
-    }
-  };
+  // const navigateHome = () => {
+  //   if(!email || !password ){
+  //     alert('no values')
+  //   }
+  //   else{
+  //     console.log('hey');
+  //     navigate("/home");
+  //   }
+  // };
   return (
     <div className="body">
       <h1>Welcome Back</h1>
@@ -57,7 +61,7 @@ const Login = () => {
             <p>Keep me logged in</p> <span>Forgot password?</span>
           </div>
         </label>
-        <button className="button" onClick={navigateHome}>
+        <button className="button" type='submit'>
           Login
         </button>
       </form>

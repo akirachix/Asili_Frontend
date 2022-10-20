@@ -133,3 +133,12 @@ grid-template-columns: auto auto auto auto; */
     }
     
 
+.images-container{
+    border: 2px black;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    
+}  
+
