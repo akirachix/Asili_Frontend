@@ -29,22 +29,20 @@ label h5{
     width: 10%;
     /* margin-left: 6%; */
 }
-.z{
+.InputFirstName{
     width: 180px;
     height: 30px;
     margin-left: 81.5%;
     padding-left: 5px;
-    border-color: #D7727C;
     border: none;
     border: 2px #D7727C solid;
     border-radius: 13px;
 }
-.x{
+.InputLastName{
     width: 180px;
     height: 30px;
     margin-left: 93.7%;
     padding-left: 5px;
-    border-color: #D7727C;
     border: none;
     border: 2px #D7727C solid;
     border-radius: 13px;
@@ -63,26 +61,37 @@ padding-left: 23.9%;}
     }
 .password{
     margin-top: 3%;
+    width: 20px;
 }
 .email {
     margin-top: 3%;
+    width: 20px;
 }
+
 .password h5{
     margin-bottom: 0.5%;
 }
 .confirm_password{
     margin-top: 3%;
+    width: 20px;
+
 }
-button{
+.button{
     height: 33px;
     margin-top: 5%;
-    width: 310px;
+    width: 400px;
     background-color: #D7727C;
     height: 37px;
     border: none;
     border-radius: 50px;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
 }
 .names{
     display: flex;
+}
+
+.AllInputs{
+    margin-left: 480px;
+
+    margin-top: 2px;
 }

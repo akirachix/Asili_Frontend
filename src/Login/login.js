@@ -48,14 +48,14 @@ const Login = () => {
           </div>
           <div className="check">
             <input type="checkbox"></input>
-            <p>Keepz me logged in</p> <span>Forgot password?</span>
+            <p>Keep me logged in</p> <span>Forgot password?</span>
           </div>
         </label>
         <button className="button" onClick={navigateHome}>
           Login
         </button>
       </form>
-      <p className="account">Don't have an account? Don't have an account?
+      <p className="account">Don't have an account?
       <a href="/SignUp"> <span> SignUp </span> </a> 
       </p>
 

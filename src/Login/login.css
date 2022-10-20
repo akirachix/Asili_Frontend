@@ -29,7 +29,7 @@ label h5{
     width: 10%;
     /* margin-left: 6%; */
 }
-.z{
+.InputFirstName{
     width: 180px;
     height: 30px;
     margin-left: 81.5%;
@@ -39,7 +39,7 @@ label h5{
     border: 2px #D7727C solid;
     border-radius: 13px;
 }
-.x{
+.InputLastName{
     width: 180px;
     height: 30px;
     margin-left: 93.7%;
