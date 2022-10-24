@@ -7,30 +7,31 @@ import trouser from "../images/trouser.png";
 import fashion from "../images/fashion.png";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-
-
 import "./homepage.css";
 
 const Navbar = () => {
-
   const navigate = useNavigate();
+
   const handleChange = (e) => {
-    const value = e.target.value
-    axios.get("http://127.0.0.1:8000/cloth?category=${value}",{query:{category:value}}).then(response => {
-      console.log(response)
-    }).catch(error => {
-      console.log(error)
-
-    })
-
-  }
+    const value = e.target.value;
+    axios
+      .get("http://127.0.0.1:8000/cloth?category=${value}", {
+        query: { category: value },
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const navigateUser = () => {
     navigate("/explore");
   };
   const navigateSignup = () => {
     navigate("/SignUp");
-  }
+  };
   return (
     <div className="nav">
       <nav>
@@ -45,9 +46,10 @@ const Navbar = () => {
           </div>
         </div>
         <div className="nav-search">
+          {/* <input onChange={handleChange} type='text' placeholder='Search...' className='Search'/> */}
           <input onChange={handleChange} type="text" placeholder="Search" />
           <button className="btnRegiste" onClick={navigateSignup}>
-            <a>Register</a>
+            <a>SignUp</a>
           </button>
         </div>
       </nav>
@@ -55,9 +57,9 @@ const Navbar = () => {
         <div className="intro">
           <h1>Asili wear</h1>
           <p>
-            Asili Wear the leading cloth brand which brings you high
-            quality products at affordable prices.<br></br>Visit our website
-            today and get the best design for you!
+            Asili Wear the leading cloth brand which brings you high quality
+            products at affordable prices.<br></br>Visit our website today and
+            get the best design for you!
           </p>
           <button className="btnRegister" onClick={navigateUser}>
             <a>Explore</a>
@@ -74,11 +76,10 @@ const Navbar = () => {
           Asili Active Wear the leading cloth brand which brings you high
           quality products at affordable prices
         </p>
-        < p className="parag-two">
-          Choose your perfect cloth, checkout how you amazing you look
-          in them, sharew with a designer and get the job done.
-          You are happy we are happy.
-          {" "}
+        <p className="parag-two">
+          Choose your perfect cloth, checkout how you amazing you look in them,
+          sharew with a designer and get the job done. You are happy we are
+          happy.{" "}
         </p>
       </div>
       <div className="cloth-categories">
@@ -86,32 +87,26 @@ const Navbar = () => {
       </div>
       <div className="cloth-categories">
         <div className="clothes">
-          <img src={dress} />
-          <p className="cloth-name">
-            {" "}
-            Dress
-          </p>
+          {/* <img src={dress}/> */}
+          <a href="/explore"><img src={dress}/></a>
+
+          <p className="cloth-name"> Dress</p>
         </div>
         <div className="clothes">
-          <img src={jacket} />
-          <p className="cloth-name">
-            {" "}
-            Jacket
-          </p>
+          {/* <img src={jacket} /> */}
+          <a href="/explore"><img src={jacket}/></a>
+          <p className="cloth-name"> Jacket</p>
         </div>
         <div className="clothes">
-          <img src={trouser} />
-          <p className="cloth-name">
-            {" "}
-            Trousers
-          </p>
+          {/* <img src={trouser} /> */}
+          <a href="/explore"><img src={trouser} /></a>
+          <p className="cloth-name"> Trousers</p>
         </div>
         <div className="clothes">
-          <img src={tshirt} />
-          <p className="cloth-name">
-            {" "}
-            T-shirts
-          </p>
+          {/* <img src={tshirt} /> */}
+          <a href="/explore"><img src={tshirt}/></a>
+
+          <p className="cloth-name"> T-shirts</p>
         </div>
       </div>
     </div>

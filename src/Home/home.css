@@ -7,21 +7,17 @@ nav {
     margin-top: -20px;
 }
 
-.people-category{
-    margin-top: 25px;
-    
-}
 .nav-list{
     margin-left: -25px;
     display: flex;
     margin-top: 35px;
 }
 .btnRegister{
-   background-color:#b10d54;
     border-radius: 30px;
     width: 120px;
     height: 40px;
     outline: none;
+    border-color: none;
     text-decoration: none;
     cursor: pointer;
     font-weight: 60px;
@@ -44,6 +40,15 @@ nav {
     color: #B10D2F;
     margin-top:50px ;
     text-decoration: none;
+}
+
+.main-category{
+    color: #D7727C;
+    display: inline-flex;
+    gap: 20px;
+    margin-right: 66%;
+    font-weight: 10px;
+    
 }
 
 .nav-search{
@@ -121,24 +126,4 @@ nav img{
 .clothes p{
     margin-left: 28%;
 }
-
-/* .fetched{
-display: grid;
-grid-column: 3;
-grid-template-columns: auto auto auto auto; */
-.fetched{
-    display: grid;
-    grid-template-columns: repeat(4,1 fr);
-    gap: 1 rem;
-    }
-    
-
-.images-container{
-    border: 2px black;
-    height: 300px;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    
-}  
 
