@@ -1,0 +1,140 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+      {
+      "id": 3,
+      "title": "Clothing",
+      "author": "freecodecamp"
+      }
+    
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+
+  "cloths": [
+    {
+      "id": 1,
+      "color": "json-server",
+      "image": "https://i.pinimg.com/236x/32/f4/e1/32f4e1f2274ea5c8f05c83f58b6ddf00.jpg",
+      "type": "jackets",
+      "categories": "custom",
+      "designers" :"designs"
+      
+    },
+    {
+      "id": 2,
+      "color": "json-server",
+      "image": "https://i.pinimg.com/236x/2c/e4/5d/2ce45d6d9c64253667edf8797646fe38.jpg",
+      "type": "trousers",
+      "categories": "custom",
+      "designers" :"designs"
+    },
+    {
+      "id": 3,
+      "color": "json-server",
+      "image": "https://i.pinimg.com/236x/89/d3/4c/89d34c21f782e21aa03cfdc07e8b7c86.jpg",
+      "type": "dress",
+      "categories": "african-print",
+      "designers" :"designs",
+      "people-category" : "men"
+     
+    },
+    {
+      "id": 4,
+      "color": "json-server",
+      "image": "https://i.pinimg.com/236x/18/1a/f8/181af80d1fd4e1b342158f395f8bdc65.jpg",
+      "type": "dress",
+      "categories": "african-print",
+      "designers" :"designs",
+      "people-category" : "women"
+    },
+    {
+      "id": 5,
+      "color": "json-server",
+      "image": "https://i.pinimg.com/236x/a7/4e/74/a74e74b12180117221fc1590c3e916be.jpg",
+      "type": "dress",
+      "categories": "african-print",
+      "designers" :"designs",
+      "people-category" : "kids"
+    },
+    {
+      "id": 6,
+      "color": "json-server",
+      "image": "https://i.pinimg.com/236x/02/4f/65/024f65b7808dc0b85b4e14ced1fb2073.jpg",
+      "type": "dress",
+      "categories": "african-print",
+      "designers" :"designs",
+      "people-category" : "men"
+    },
+    {
+      "id": 7,
+      "color": "json-server",
+      "image": "https://i.pinimg.com/236x/03/0b/d4/030bd49d1a17b8c34523efb85550d6fe.jpg",
+      "type": "trousers",
+      "categories": "personalised",
+      "designers" :"designs",
+      "people-category" : "men"
+    },
+    {
+      "id": 8,
+      "color": "json-server",
+      "image": "https://i.pinimg.com/236x/03/0b/d4/030bd49d1a17b8c34523efb85550d6fe.jpg",
+      "type": "trousers",
+      "categories": "personalised",
+      "designers" :"designs",
+      "people-category" : "women"
+    },
+    {
+      "id": 9,
+      "color": "Pink",
+      "image": "https://i.pinimg.com/236x/96/74/1e/96741e6de26eeffcde626a714b77d141.jpg",
+      "type": "jackets",
+      "categories": "custom",
+      "designers" :"designs",
+      "people-category" : "women"
+    },
+    {
+      "id": 10,
+      "color": "Red",
+      "image": "https://i.pinimg.com/236x/2e/9c/43/2e9c439ca79879cfdd08ac64015a714b.jpg",
+      "type": "dress",
+      "categories": "african-print",
+      "designers" :"designs",
+      "people-category" : "kids"
+    },
+    {
+      "id": 11,
+      "color": "blue",
+      "image": "https://i.pinimg.com/236x/59/61/b3/5961b3555e4b76173ed2bad81854577a.jpg",
+      "type": "jackets",
+      "categories": "personalised",
+      "designers" :"designs",
+      "people-category" : "kids"
+    },
+    {
+      "id": 12,
+      "color": "yellow",
+      "image": "https://i.pinimg.com/236x/d8/28/63/d8286337dffa1b2a0b4237e46d3e8469.jpg",
+      "type": "dress",
+      "categories": "african-print",
+      "designers" :"designs",
+      "people-category" : "kids"
+    }
+
+
+      
+    
+  ]
+}

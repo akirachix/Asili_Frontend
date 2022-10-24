@@ -14,10 +14,18 @@ const Login = () => {
       password: password,
     };
     console.log(JSON.stringify(data));
-  };
-  const navigateHome = () => {
+    console.log('hey');
     navigate("/home");
   };
+  // const navigateHome = () => {
+  //   if(!email || !password ){
+  //     alert('no values')
+  //   }
+  //   else{
+  //     console.log('hey');
+  //     navigate("/home");
+  //   }
+  // };
   return (
     <div className="body">
       <h1>Welcome Back</h1>
@@ -29,6 +37,7 @@ const Login = () => {
               className="container"
               type="text"
               placeholder="Enter email"
+              required
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
@@ -40,6 +49,7 @@ const Login = () => {
               className="container"
               type="password"
               placeholder="Password"
+              required
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
@@ -51,11 +61,11 @@ const Login = () => {
             <p>Keep me logged in</p> <span>Forgot password?</span>
           </div>
         </label>
-        <button className="button" onClick={navigateHome}>
+        <button className="button" type='submit'>
           Login
         </button>
       </form>
-      <p className="account">Don't have an account?
+      <p className="account">Don't have an account? 
       <a href="/SignUp"> <span> SignUp </span> </a> 
       </p>
 
