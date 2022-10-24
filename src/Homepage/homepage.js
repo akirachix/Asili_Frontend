@@ -11,6 +11,15 @@ import "./homepage.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
+<<<<<<< HEAD
+  const handleChange = (e) => {
+    const value = e.target.value
+    axios.get("http://127.0.0.1:8000/cloth?category=${value}", { query: { category: value } }).then(response => {
+      console.log(response)
+    }).catch(error => {
+      console.log(error)
+=======
+>>>>>>> 43b41721de52728a390eb040d5554d3cf448b59b
 
   const handleChange = (e) => {
     const value = e.target.value;
