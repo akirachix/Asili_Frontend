@@ -1,19 +1,18 @@
-import './signup.css'
+import "./signup.css";
 import axios from "axios";
-import { useState } from 'react';
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
+// import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-
 const SignUp = () => {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [confirmPassword, setConfirmPassword] = useState("");
-    const [first_name, setFirstName] = useState("");
-    const [last_name, setLastName] = useState("");
-    const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [first_name, setFirstName] = useState("");
+  const [last_name, setLastName] = useState("");
+  const navigate = useNavigate();
 
     const submitting = (event) => {
         if (!first_name || !last_name || !email || !password || !confirmPassword) {
@@ -107,10 +106,10 @@ const SignUp = () => {
                             }
                         ></input><br></br></div>
                 </label>
-                <button className="button" type='submit'  >SignUp</button>
+                <button className="button" type='submit'>SignUp</button>
             </form>
             <p className="account">Don't have an account?
-                <a href="/Login"><span> Login </span> </a> </p>
+                <a href="/Login"><span>Login </span> </a></p>
         </div>
     );
 };
