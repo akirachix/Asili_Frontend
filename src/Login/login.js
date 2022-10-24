@@ -17,15 +17,7 @@ const Login = () => {
     console.log('hey');
     navigate("/home");
   };
-  // const navigateHome = () => {
-  //   if(!email || !password ){
-  //     alert('no values')
-  //   }
-  //   else{
-  //     console.log('hey');
-  //     navigate("/home");
-  //   }
-  // };
+
   return (
     <div className="body">
       <h1>Welcome Back</h1>

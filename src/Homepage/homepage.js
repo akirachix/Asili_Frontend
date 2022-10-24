@@ -16,7 +16,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const handleChange = (e) => {
     const value = e.target.value
-    axios.get("http://127.0.0.1:8000/cloth?category=${value}",{query:{category:value}}).then(response => {
+    axios.get("http://127.0.0.1:8000/cloth?category=${value}", { query: { category: value } }).then(response => {
       console.log(response)
     }).catch(error => {
       console.log(error)

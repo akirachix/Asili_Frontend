@@ -5,6 +5,10 @@ import Login from "./Login/login";
 import User from "./Home/home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Homepage/homepage";
+import { useMediaQuery } from 'react-responsive'
+import Test from "./test";
+import { Dropdown } from "react-bootstrap";
+
 
 function App() {
   return (
@@ -17,6 +21,8 @@ function App() {
           <Route exact path="/home" element={<Navbar />} />
           <Route exact path="/home" element={<Navbar />} />
           <Route exact path="/explore" element={<User />} />
+
+
 
 
         </Routes>

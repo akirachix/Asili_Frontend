@@ -14,19 +14,19 @@ nav {
 .nav-list{
     margin-left: -25px;
     display: flex;
-    margin-top: 35px;
+    margin-top: 40x;
 }
-.btnRegister{
-   background-color:#b10d54;
+
+.btnRegiste{
     border-radius: 30px;
-    width: 120px;
-    height: 40px;
-    outline: none;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: 60px;
-    margin-left: -3%;
-    margin-top: 6%;
+     width: 120px;
+     height: 40px;
+     outline: none;
+     text-decoration: none;
+     cursor: pointer;
+     font-weight: 60px;
+     margin-left: 30px;
+     margin-top: 4px;
 
 }
 .btnRegiste{
@@ -38,23 +38,20 @@ nav {
      cursor: pointer;
      font-weight: 60px;
      margin-left: 30px;
+     margin-top: 23px;
+     
  }
 .nav-list a{
     padding: 20px;
-    color: #B10D2F;
+    color: #D7727C;
     margin-top:50px ;
     text-decoration: none;
 }
 
 .nav-search{
-    margin-left: 38%;
+    margin-left: 48%;
     margin-top: 50px;
-}
-
-.nav-search input{
-    width: 250px;
-    height: 30px;
-    border-radius: 30px;
+    display: flex;
 }
 
 nav img{
@@ -121,24 +118,20 @@ nav img{
 .clothes p{
     margin-left: 28%;
 }
-
-/* .fetched{
-display: grid;
-grid-column: 3;
-grid-template-columns: auto auto auto auto; */
-.fetched{
-    display: grid;
-    grid-template-columns: repeat(4,1 fr);
-    gap: 1 rem;
-    }
-    
-
-.images-container{
-    border: 2px black;
-    height: 300px;
-    width: 300px;
+.new{
+    margin-top: 4%;
+}
+.option-list{
+    margin-left: -4.1%;
     display: flex;
-    justify-content: space-between;
-    
-}  
+    margin-top: 50px;    
+}
+
+.option-list a{
+    padding: 20px;
+    color: #D7727C;
+    margin-top:50px ;
+    text-decoration: none;
+}
+
 

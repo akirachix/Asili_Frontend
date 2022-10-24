@@ -16,7 +16,7 @@ nav {
     display: flex;
     margin-top: 35px;
 }
-.btnRegister{
+/* .btnRegister{
    background-color:#b10d54;
     border-radius: 30px;
     width: 120px;
@@ -26,10 +26,10 @@ nav {
     cursor: pointer;
     font-weight: 60px;
     margin-left: -3%;
-    margin-top: 6%;
+    margin-top: -33;
 
-}
-.btnRegiste{
+} */
+.btnRegister{
      border-radius: 30px;
      width: 120px;
      height: 40px;
@@ -38,6 +38,8 @@ nav {
      cursor: pointer;
      font-weight: 60px;
      margin-left: 30px;
+     margin-top: -2px;
+
  }
 .nav-list a{
     padding: 20px;
@@ -55,6 +57,8 @@ nav {
     width: 250px;
     height: 30px;
     border-radius: 30px;
+    margin-top: -14px;
+    
 }
 
 nav img{
